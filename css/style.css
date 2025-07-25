@@ -251,3 +251,30 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
+.skills-section {
+    padding: 80px 20px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    color: #2563eb;
+    padding: 4px 12px;
+    background: #f2f5fd;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    color: #ffffff;
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
