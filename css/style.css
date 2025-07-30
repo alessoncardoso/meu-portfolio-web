@@ -86,26 +86,22 @@ body {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
-.hero-container {
+.section-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.hero-image {
-    margin-bottom: 2rem;
-}
-
 .animate-image {
     position: relative;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
 .float-image {
     width: 200px;
     height: 200px;
     animation: float 6s ease-in-out infinite;
-    background: transparent;
     margin-bottom: .5rem;
 }
 
@@ -143,32 +139,19 @@ body {
     }
 }
 
-.hero-title {
-    margin-bottom: 1rem;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: bold;
-}
-
 .text-primary {
     color: #2563eb;
 }
 
-.hero-subtitle {
+.section-subtitle {
     color: #6b7280;
     margin-bottom: 1.5rem;
     font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: bold;
 }
 
-.hero-description {
-    font-size: 1.125rem;
-    color: #6b7280;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-}
 
-.hero-buttons {
+.section-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
@@ -247,7 +230,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.section-content {
+.about-section .section-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -276,14 +259,14 @@ body {
     gap: 0.5rem;
 }
 
-.section-image {
+.icon-badge {
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.section-image::after {
+.icon-badge::after {
     content: '';
     position: absolute;
     bottom: -16px;
@@ -298,7 +281,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.section-image::after {
+.icon-badge::after {
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     content: '\f121';
@@ -344,17 +327,15 @@ body {
 
 .project-section {
     padding: 80px 20px;
-    background: rgba(249, 250, 251, 0.5);
 }
 
-.projects-grid {
+.section-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
 }
 
 .project-card {
-    background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -367,7 +348,11 @@ body {
 }
 
 .section-description {
-
+    color: #6b7280;
+    text-align: center;
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
 }
 
 .project-image {
@@ -392,7 +377,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.project-header h3 {
+.project-title {
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -420,7 +405,7 @@ body {
     background: #2563eb;
 }
 
-.project-content p {
+.project-description {
     color: #6b7280;
     margin-bottom: 1rem;
 }
@@ -434,23 +419,9 @@ body {
     font-weight: 500;
 }
 
-.contact {
+.contact-section {
     padding: 80px 20px;
     text-align: center;
-}
-
-.contact-description {
-    color: #6b7280;
-    font-size: 1.125rem;
-    max-width: 600px;
-    margin: 0 auto 3rem;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .contact-card {
