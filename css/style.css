@@ -20,23 +20,6 @@ body {
     z-index: 1000;
 }
 
-.navbar.scrolled {
-    background: #2563eb;
-    transition: background 0.3s ease;
-}
-
-.navbar.scrolled .nav-link {
-    color: #ffffff;
-}
-
-.navbar.scrolled .nav-logo {
-    color: #ffffff;
-}
-
-.navbar.scrolled .menu-toggle span {
-    background: #ffffff;
-}
-
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -69,18 +52,35 @@ body {
     color: #2563eb;
 }
 
-.menu-toggle {
+.menu-button {
+    border: none;
     display: none;
-    flex-direction: column;
+    background: none;
     cursor: pointer;
+    font-size: 1.5rem;
+    color: #2563eb;
 }
 
-.menu-toggle span {
-    width: 25px;
-    height: 3px;
-    margin: 3px 0;
-    background: #333;
-    transition: 0.3s;
+.navbar.scrolled {
+    background: #2563eb;
+    transition: background 0.3s ease;
+}
+
+.navbar.scrolled .nav-logo,
+.navbar.scrolled .menu-button {
+    color: #ffffff;
+}
+
+.navbar .nav-menu.active {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    background: #fff;
 }
 
 .hero-section {
@@ -472,8 +472,8 @@ body {
         display: none;
     }
 
-    .menu-toggle {
-        display: flex;
+    .menu-button {
+        display: block;
     }
 
     .section-buttons {
