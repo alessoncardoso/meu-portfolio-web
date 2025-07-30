@@ -18,3 +18,19 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 });
+
+window.addEventListener("load", () => {
+    const element = document.querySelector(".text-primary")
+    const text = element.textContent
+    element.textContent = ""
+    let i = 0
+
+    const type = () => {
+        if (i < text.length) {
+            element.textContent += text[i++]
+            setTimeout(type, 50)
+        }
+    }
+
+    type()
+})
