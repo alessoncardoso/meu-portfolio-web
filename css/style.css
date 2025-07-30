@@ -452,3 +452,15 @@ body {
     color: #6b7280;
 }
 
+.footer {
+    padding: 2rem 20px;
+    background: rgba(249, 250, 251, 0.5);
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.footer p {
+    color: #6b7280;
+    font-size: smaller;
+}
+
