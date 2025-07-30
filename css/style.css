@@ -11,13 +11,12 @@ body {
     background-color: #ffffff;
 }
 
-.header {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.95);
-    border-bottom: 1px solid #e5e7eb;
+    background: transparent;
     z-index: 1000;
 }
 
@@ -32,6 +31,10 @@ body {
 
 .navbar.scrolled .nav-logo {
     color: #ffffff;
+}
+
+.navbar.scrolled .menu-toggle span {
+    background: #ffffff;
 }
 
 .nav-container {
