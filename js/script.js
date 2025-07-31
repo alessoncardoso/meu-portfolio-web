@@ -1,6 +1,7 @@
 const mobileMenuButton = document.getElementById('menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const navbar = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('.nav-link');
 
 function toggleMenu() {
     const isOpen = mobileMenu.classList.toggle('active');
@@ -10,6 +11,15 @@ function toggleMenu() {
 }
 
 mobileMenuButton.addEventListener('click', toggleMenu);
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            mobileMenuButton.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+    });
+});
 
 window.addEventListener("scroll", function () {
     if (window.scrollY > 40) {
