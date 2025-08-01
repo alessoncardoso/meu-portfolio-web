@@ -101,11 +101,17 @@ body {
     margin-bottom: 2rem;
 }
 
+.circle {
+    width: 250px;
+    height: 250px;
+    background: #2563eb;
+    border-radius: 50%;
+}
+
 .float-image {
     width: 200px;
     height: 200px;
     animation: float 6s ease-in-out infinite;
-    margin-bottom: .5rem;
 }
 
 @keyframes float {
@@ -119,7 +125,6 @@ body {
 
 .shadow-image {
     position: absolute;
-    bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
     width: 120px;
