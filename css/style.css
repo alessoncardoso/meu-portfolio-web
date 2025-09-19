@@ -355,7 +355,7 @@ body {
 /* Imagem usuário */
 .user-image {
     max-width: 100%;
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 20px;
     border: 5px solid var(--color-border);
