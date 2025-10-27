@@ -2,6 +2,26 @@ const mobileMenuButton = document.getElementById('menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.nav-link');
+const btnTop = document.getElementById('btn-top');
+
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
 
 function toggleMenu() {
     const isOpen = mobileMenu.classList.toggle('active');
