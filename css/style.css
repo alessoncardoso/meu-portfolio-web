@@ -565,6 +565,16 @@ body {
         justify-content: center;
     }
 
+    .btn-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        color: var(--color-white) !important;
+        background: var(--color-primary-bg);
+        border-radius: 5px;
+    }
+
     .about-section .section-content {
         grid-template-columns: 1fr;
         gap: 2rem;
